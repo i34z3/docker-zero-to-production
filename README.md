@@ -1,4 +1,4 @@
-# docker-zero-to-production
+# create images
 
 docker build -t node-image .
 
