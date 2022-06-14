@@ -1,0 +1,11 @@
+FROM node:18-alpine3.15
+
+WORKDIR /home/node/app
+
+COPY . .
+
+RUN npm install
+
+USER node
+
+CMD [ "node", "/home/node/app/src/index.js" ]
